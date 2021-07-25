@@ -17,6 +17,8 @@ namespace UserRegistrationProblem
             string email = Console.ReadLine();
             Console.Write("Enter Mobile Number :- ");
             string mobile = Console.ReadLine();
+            Console.Write("Enter Password :- ");
+            string password = Console.ReadLine();
 
             // Creating object
             RegexTest R = new RegexTest();
@@ -24,6 +26,7 @@ namespace UserRegistrationProblem
             Console.WriteLine(R.TestLastName(lastName));
             Console.WriteLine(R.TestEmail(email));
             Console.WriteLine(R.TestMobileNumber(mobile));
+            Console.WriteLine(R.TestPassword(password));
         }
     }
 }
