@@ -15,12 +15,15 @@ namespace UserRegistrationProblem
             string lastName = Console.ReadLine();
             Console.Write("Enter Email ID :- ");
             string email = Console.ReadLine();
+            Console.Write("Enter Mobile Number :- ");
+            string mobile = Console.ReadLine();
 
             // Creating object
             RegexTest R = new RegexTest();
             Console.WriteLine(R.TestFirstName(firstName));
             Console.WriteLine(R.TestLastName(lastName));
             Console.WriteLine(R.TestEmail(email));
+            Console.WriteLine(R.TestMobileNumber(mobile));
         }
     }
 }
