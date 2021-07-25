@@ -11,10 +11,13 @@ namespace UserRegistrationProblem
 
             Console.Write("Enter First Name :- ");
             string firstName = Console.ReadLine();
+            Console.Write("Enter Last Name :- ");
+            string lastName = Console.ReadLine();
 
             // Creating object
             RegexTest R = new RegexTest();
             Console.WriteLine(R.TestFirstName(firstName));
+            Console.WriteLine(R.TestLastName(lastName));
         }
     }
 }
