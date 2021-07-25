@@ -10,7 +10,7 @@ namespace UserRegistrationProblem
     {
         public string firstName = "^[A-Z]{1}[a-zA-z]{2,}";
         public string lastName = "^[A-Z]{1}[a-zA-z]{2,10}";
-
+        public string testEmail = "^[A-Za-z0-9.]{3,20}@[A-Za-z]{2,10}.(com|co.in)$";
 
         /// <summary>
         /// Method to test First Name
@@ -31,6 +31,16 @@ namespace UserRegistrationProblem
         {
             Console.Write("Last Name is Valid (True/False) :- ");
             return Regex.IsMatch(lName, lastName);
+        }
+        /// <summary>
+        /// Method to test Email
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
+        public bool TestEmail(string email)
+        {
+            Console.Write("Email ID is Valid (True/False) :- ");
+            return Regex.IsMatch(email, testEmail);
         }
     }
 }
