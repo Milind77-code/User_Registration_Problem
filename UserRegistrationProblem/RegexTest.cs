@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace UserRegistrationProblem
 {
-    class RegexTest
+    public class RegexTest
     {
         public string firstName = "^[A-Z]{1}[a-zA-z]{2,}";
         public string lastName = "^[A-Z]{1}[a-zA-z]{2,10}";
@@ -63,5 +63,6 @@ namespace UserRegistrationProblem
             Console.Write("Password is Valid (True/False) :- ");
             return Regex.IsMatch(pWord, password);
         }
+
     }
 }
